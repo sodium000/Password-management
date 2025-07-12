@@ -23,9 +23,6 @@ passwordManager/
 ├── passOp-mongo/ # React + Vite frontend and using backend + database 
 └── passOp-localStroge/ # password save in local stroge 
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -33,74 +30,62 @@ Edit
 
 ### 📁 1. Clone the Repository
 
-```bash
-git clone https://github.com/sodium000/Password-management.git
-cd your-repo-name
+---
+
+ # git clone https://github.com/sodium000/Password-management.git
+
 ⚙️ Backend Setup (Express.js)
 📍 Navigate to backend folder
-bash
-Copy
-Edit
-cd backend
-📦 Install Dependencies
-bash
-Copy
-Edit
-npm install
+
+- cd backend
+
+# 📦 Install Dependencies
+
+- npm install
+
 ▶️ Run the Server
-bash
-Copy
-Edit
-npm run start
+
+- npm run start
+
 Or, if using nodemon for development:
 
-bash
-Copy
-Edit
-npx nodemon sever.js
-📝 By default, the backend runs on: http://localhost:3000
+- npx nodemon sever.js
+
+# 📝 By default, the backend runs on: http://localhost:3000
 
 🎨 Frontend Setup (React + Vite)
 📍 Navigate to frontend folder
-bash
-Copy
-Edit
-cd ../client
-📦 Install Dependencies
-bash
-Copy
-Edit
-npm install
-▶️ Run the Development Server
-bash
-Copy
-Edit
-npm run dev
+
+
+# 📦 Install Dependencies
+ 
+- npm install
+
+# ▶️ Run the Development Server
+
+- npm run dev
+
 📝 By default, Vite runs on: http://localhost:5173
 
 🔄 API Connection
 Make sure the frontend is configured to send requests to the correct backend URL (e.g., http://localhost:3000/api/...).
 This is usually handled via an .env file or configuration variable.
 
-📦 Build Frontend for Production
-bash
-Copy
-Edit
-cd client
-npm run build
-The production-ready files will be located in the client/dist/ folder.
+# 📦 Build Frontend for Production
 
-📂 Example .env Files
-🔧 For Backend (backend/.env)
-env
-Copy
-Edit
+
+npm run build
+
+
+
+# 📂 Example .env Files
+# 🔧 For Backend (backend/.env)
+
 PORT=3000
 MONGO_URI=your_mongodb_connection_string
-🎨 For Frontend (client/.env)
-env
-Copy
-Edit
+
+# 🎨 For Frontend (client/.env)
+
 VITE_API_BASE_URL=http://localhost:3000
 
 
